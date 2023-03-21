@@ -24,7 +24,7 @@ tail.sort(key=lambda d: d[0])
 
 # convert data to JSON
 team = -1
-data = {header[0]: header[1:]}
+data = {header[0]: [header[1:]]}
 for l in tail:
     if l[0] != team:
         data[str(l[0])] = []
